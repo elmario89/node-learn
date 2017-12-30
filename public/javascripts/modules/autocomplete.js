@@ -1,5 +1,3 @@
-import {$$} from './bling';
-
 function autocomplete(input, latInput, lngInput, image) {
     if (!input) return;
 

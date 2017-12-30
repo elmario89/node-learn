@@ -16,4 +16,8 @@ If you have previously loaded in this data, you can wipe your database 100% clea
 npm run blowitallaway
 ```
 
+For statring local mongodb
 
+```bash
+sudo mongod
+```
