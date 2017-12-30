@@ -10,10 +10,12 @@ mixin storeForm(store = {})
         input(type='text' name='location[address]' id='address' value=(store.location && store.location.address))
 
         label(for='lng') Address lng
-        input(type='text' name='location[coordinates][0]' id='lng' value=(store.location && store.location.coordinates[0] required))
+        input(type='text' name='location[coordinates][0]' id='lng' value=(store.location && store.location.coordinates[0]))
 
         label(for='lat') Address lng
-        input(type='text' name='location[coordinates][1]' id='lat' value=(store.location && store.location.coordinates[1] required))
+        input(type='text' name='location[coordinates][1]' id='lat' value=(store.location && store.location.coordinates[1]))
+
+        #imageContainer
 
         - const choices = ['Wifi', 'Open Late', 'Family friendly', 'Vegetarian', 'Licensed']
         - const tags = store.tags || []
